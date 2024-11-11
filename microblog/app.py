@@ -10,5 +10,9 @@ def index():
 def contato():
   return render_template("contato.html", tel="(87) 9999888888")
 
+@app.route('/sobre')
+def sobre():
+  return render_template("sobre.html")
+
 if __name__ == '__main__':
     app.run()
